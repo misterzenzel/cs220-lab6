@@ -4,4 +4,4 @@ compiler: gcc
 
 jobs:
   - stage: build
-  - script: make -C hello/ clean all
+  - script: make -C hello/
