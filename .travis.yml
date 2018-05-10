@@ -4,5 +4,6 @@ compiler: gcc
 
 
 script:
-  - make -C hello/ clean all
+  - cd /home/travis/build/misterzenzel/cs220-lab6/hello
+  - make clean all
   - ./hello
