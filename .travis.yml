@@ -2,6 +2,7 @@ language: c
 
 compiler: gcc
 
-jobs:
-  - stage: build
-  - script: make -C hello/
+
+script:
+  - make -C hello/ clean all
+  - ./hello
