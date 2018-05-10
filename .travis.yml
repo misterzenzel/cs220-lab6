@@ -1,4 +1,9 @@
-hello:build:
+language: c
+
+compiler: gcc
+
+jobs:
+  hello:build:
     stage: build
     script:
       - make -C hello/ clean all
@@ -8,8 +13,7 @@ hello:build:
       expire_in: 1 hour
       paths:
         hello/hello
-
-hello:test:
+  hello:test:
     stage: test
     script:
       - hello/hello
